@@ -43,7 +43,7 @@ function displayBooks(books) {
 
         // create the necessary containers
     const bookDiv = document.createElement("div");
-    bookDiv.className = "book-card"
+    bookDiv.className = "bg-slate-800 p-4 rounded-lg shadow-md flex gap-4 mb-4 hover:scale-105 transition"
 
     const titleEl = document.createElement("h3");
     titleEl.textContent = title || "No Title";
@@ -57,7 +57,10 @@ function displayBooks(books) {
     const previewLink = info.previewLink;
 
     const img= document.createElement("img");
-    img.className = "book-img";
+    img.className = "w-24 h-32 object-cover rounded";
+
+    const textDiv = document.createElement("div");
+    textDiv.className = "flex flex-col"
     
     if (thumbnail) {
         img.src = thumbnail;
@@ -77,8 +80,9 @@ function displayBooks(books) {
     bookDiv.appendChild(descriptionEl);
     bookDiv.appendChild(img);
     resultsDiv.appendChild(bookDiv);
-});
+    bookDiv.appendChild(textDiv);
 
+})
 }
 
 //expose functions
