@@ -11,7 +11,7 @@ FEATURES
 -  Click on a book image to preview it online
 -  Responsive design using Tailwind CSS
 
-TEXHNOLOGIES USED
+TECHNOLOGIES USED
 
 - HTML
 - Tailwind CSS
@@ -24,7 +24,7 @@ HOW IT WORKS
 1. User enters a search term
 2. App sends a request to Google Books API
 3. Results are fetched and displayed dynamically
-4. Users can click book images to preview
+4. Users can click on the book images to preview
 
 INSTALLATION
 
